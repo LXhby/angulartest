@@ -1,0 +1,28 @@
+<!--<ion-content>-->
+  <!--<button>-->
+    <!--<ion-cart>-->
+      <!--<ion-card-header>-->
+
+      <!--</ion-card-header>-->
+    <!--</ion-cart>-->
+  <!--</button>-->
+  <!---->
+
+
+<ion-content>
+  <button ion-item *ngFor="let item of items" (click)="itemTapped($event,item)">
+
+    <ion-card>
+      <ion-item>
+        {{item.title}}
+        {{item.note}}
+        <!--<icon-avatar>-->
+          <!--<img [src]="item.smallPic" alt="">-->
+        <!--</icon-avatar>-->
+        <i></i>
+        <i></i>
+
+      </ion-item>
+    </ion-card>
+  </button>
+</ion-content>
